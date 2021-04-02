@@ -240,6 +240,10 @@ PRODUCT_COPY_FILES += \
 #PRODUCT_PACKAGES += \
 #    KProfiles
 
+# Kernel
+PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
+
+
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor
