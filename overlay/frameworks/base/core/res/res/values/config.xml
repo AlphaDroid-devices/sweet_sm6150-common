@@ -328,4 +328,9 @@
     <integer name="config_wakeUpDelayDoze">32</integer>
     <!--The name of the package that will hold the dialer role by default. -->
     <string name="config_defaultDialer" translatable="false">com.android.dialer</string>
+    
+     <!-- Smart charging -->
+    <string name="config_SmartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/input_suspend</string>
+    <string name="config_SmartChargingSuspendValue" translatable="false">1</string>
+    <string name="config_SmartChargingResumeValue" translatable="false">0</string>
 </resources>

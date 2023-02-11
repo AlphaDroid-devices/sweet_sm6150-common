@@ -130,6 +130,10 @@ on property:sys.boot_completed=1
     write /sys/block/sde/queue/iostats 1
     write /dev/sys/fs/by-name/userdata/data_io_flag 8
     write /dev/sys/fs/by-name/userdata/node_io_flag 8
+    
+    # SMART CHARGING
+    chown system system /sys/class/power_supply/battery/input_suspend
+    chmod 0666 /sys/class/power_supply/battery/input_suspend
 
     # Setup cpu.shares to throttle background groups (bg ~ 5% sysbg ~ 10%)
     write /dev/cpuctl/background/cpu.shares 1024
